@@ -1,0 +1,36 @@
+# Configuración de la aplicación
+app:
+  name: "Sistema de Gestión de Usuarios"
+  version: "1.0.0"
+  debug: true
+
+# Configuración de la base de datos
+database:
+  host: "localhost"
+  port: 5432
+  username: "admin"
+  password: "secreto"
+  name: "usuarios_db"
+
+# Lista de usuarios
+users:
+  - id: 1
+    name: "Ana Pérez"
+    email: "ana.perez@example.com"
+    role: "admin"
+  
+  - id: 2
+    name: "Carlos Gómez"
+    email: "carlos.gomez@example.com"
+    role: "editor"
+
+  - id: 3
+    name: "María López"
+    email: "maria.lopez@example.com"
+    role: "viewer"
+
+# Configuración del servidor
+server:
+  host: "0.0.0.0"
+  port: 8080
+  ssl: false
